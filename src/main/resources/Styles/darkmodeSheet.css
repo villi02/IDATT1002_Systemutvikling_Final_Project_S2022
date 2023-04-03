@@ -1,0 +1,83 @@
+.anchorBackground {
+    -fx-background-image: url("../Images/bcakground.jpg");
+    -fx-background-size: 100% 100%;
+}
+
+.newAnchorBackground{
+    -fx-background-color: #2A272A;
+}
+
+.buttonBackground {
+    -fx-background-color: #0a0a23;
+    -fx-opacity: 0.8;
+}
+
+.buttonBackground:hover {
+    -fx-opacity: 0.9;
+}
+
+.loginAnchorBackground {
+    -fx-background-image: url("../Images/loginBackground.jpg");
+    -fx-background-size: 100% 100%;
+}
+
+.loginButton {
+    -fx-background-color: #454555;
+    -fx-border-width: 1px;
+    -fx-border-color: white;
+
+}
+.loginButton:hover {
+    -fx-background-color: #0A0A23;
+    -fx-border-width: 1px;
+    -fx-border-color: white;
+}
+
+.teamCreatorBackGround {
+    -fx-background-image: url("../Images/teamCreatorBackground.jpg");
+    -fx-background-size: 100% 100%;
+}
+
+.menuBar {
+    -fx-background-color: black;
+    -fx-opacity: 0.9;
+    -fx-border-radius: 3px;
+    -fx-border-color: white;
+}
+
+.menuBarButton {
+    -fx-background-color: linear-gradient(to bottom, white, grey);
+    -fx-border-width: 1px;
+}
+
+.typeAreas {
+    -fx-background-color: #FAF7FF;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-text-inner-color: black;
+    -fx-prompt-text-fill: #000000;
+}
+
+.displayTeamTextOne {
+    -fx-background-color: #343434;
+    -fx-text-fill: white;
+}
+
+.displayTeamTextTwo {
+    -fx-background-color: #5f6165;
+    -fx-text-fill: white;
+}
+
+.displayScore {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #343434;
+    -fx-text-alignment: center;
+}
+
+.tournamentInfo {
+    -fx-background-color: #5f6165;
+    -fx-text-fill: white;
+    -fx-text-alignment: center;
+    -fx-border-color: grey;
+}
+

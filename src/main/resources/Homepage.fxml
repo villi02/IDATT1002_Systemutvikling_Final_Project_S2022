@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1080.0" styleClass="anchorBackground" stylesheets="@Styles/darkmodeSheet.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.edu.ntnu.idatt1002.techn.App.Controllers.LogInPageController">
+   <children>
+      <Label layoutX="248.0" layoutY="35.0" prefHeight="48.0" prefWidth="663.0" style="-fx-font-weight: 900; -fx-font-family: 'Copperplate Gothic Light';" text="Kombos E-sport Tournament" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="248.0" AnchorPane.rightAnchor="169.0">
+         <font>
+            <Font name="Verdana" size="38.0" />
+         </font>
+      </Label>
+      <Button id="viewOnlyModeButton" layoutX="474.0" layoutY="170.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchToViewOnlyMode" prefHeight="39.0" prefWidth="133.0" styleClass="buttonBackground" stylesheets="@Styles/darkmodeSheet.css" text="View Tournament" textFill="WHITE" AnchorPane.leftAnchor="474.0" AnchorPane.rightAnchor="472.66666666666663">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button id="helpButton" layoutX="474.0" layoutY="290.0" mnemonicParsing="false" onAction="#helpButton" prefHeight="39.0" prefWidth="133.0" styleClass="buttonBackground" text="Help" textFill="WHITE" AnchorPane.leftAnchor="474.0" AnchorPane.rightAnchor="472.66666666666663">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="474.0" layoutY="354.0" mnemonicParsing="false" onAction="#logout" prefHeight="39.0" prefWidth="133.0" styleClass="buttonBackground" text="Exit" textFill="WHITE" AnchorPane.leftAnchor="474.0" AnchorPane.rightAnchor="472.66666666666663">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button id="adminLoginButton" layoutX="474.0" layoutY="230.0" mnemonicParsing="false" onAction="#switchToFrontPage" prefHeight="39.0" prefWidth="133.0" styleClass="buttonBackground" text="Admin Login" textFill="WHITE" AnchorPane.leftAnchor="474.0" AnchorPane.rightAnchor="472.66666666666663">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

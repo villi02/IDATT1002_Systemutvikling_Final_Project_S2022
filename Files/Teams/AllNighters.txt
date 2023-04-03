@@ -1,0 +1,10 @@
+All Nighters
+0
+5
+0
+Norwegian
+20,Stian,Wilhelmsen,Stiaan,Norwegian,Player
+25,Andreas,Wlosek,Kombos,Polish,Captain
+23,Ola,Halvorsen,Akuh,Norwegian,Player
+21,Simen,F,Feebls,Norwegian,Player
+19,Emil,Ornes,Stians eGirl,Norwegian,Player

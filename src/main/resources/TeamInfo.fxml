@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1080.0" styleClass="loginAnchorBackground" stylesheets="@Styles/darkmodeSheet.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.edu.ntnu.idatt1002.techn.App.Controllers.TeamInfoController">
+   <children>
+      <Label layoutX="422.0" layoutY="25.0" prefHeight="48.0" prefWidth="237.0" text="Team Information" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ToolBar layoutX="311.0" layoutY="95.0" prefHeight="40.0" styleClass="menuBar" stylesheets="@Styles/darkmodeSheet.css">
+         <items>
+            <Button mnemonicParsing="false" onAction="#switchToFrontPage" styleClass="menuBarButton" stylesheets="@Styles/darkmodeSheet.css" text="Homepage" />
+            <Button layoutX="10.0" layoutY="13.0" mnemonicParsing="false" onAction="#switchToCurrentTournament" styleClass="menuBarButton" text="Current Tournament" />
+            <Button layoutX="102.0" layoutY="13.0" mnemonicParsing="false" onAction="#switchToTournamentGenerator" styleClass="menuBarButton" text="Tournament Creator" />
+            <Button fx:id="teamCreateButton" mnemonicParsing="false" onAction="#switchToTeamCreator" styleClass="menuBarButton" text="Team Registration" />
+         </items>
+      </ToolBar>
+      <AnchorPane layoutX="54.0" layoutY="170.0" prefHeight="507.0" prefWidth="967.0" styleClass="newAnchorBackground" stylesheets="@Styles/darkmodeSheet.css">
+         <children>
+            <ListView fx:id="playerList" layoutX="372.0" layoutY="88.0" prefHeight="331.0" prefWidth="204.0" styleClass="typeAreas" stylesheets="@Styles/darkmodeSheet.css" />
+            <ListView fx:id="teamList" layoutX="39.0" layoutY="88.0" prefHeight="331.0" prefWidth="204.0" styleClass="typeAreas" stylesheets="@Styles/darkmodeSheet.css" />
+            <ListView fx:id="playerInfoList" layoutX="716.0" layoutY="88.0" mouseTransparent="true" prefHeight="331.0" prefWidth="204.0" styleClass="typeAreas" stylesheets="@Styles/darkmodeSheet.css" />
+            <Label layoutX="107.0" layoutY="29.0" prefHeight="27.0" prefWidth="69.0" text="Teams" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="teamNameLabel" alignment="CENTER" layoutX="372.0" layoutY="29.0" prefHeight="30.0" prefWidth="204.0" text="Players" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="750.0" layoutY="20.0" prefHeight="48.0" prefWidth="137.0" text="Player selected" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Line endX="869.7213745117188" endY="2.13568115234375" layoutX="152.0" layoutY="168.0" startX="-98.3" stroke="WHITE" />
+      <Line endX="-9.0" endY="509.4285888671875" layoutX="63.0" layoutY="168.0" startX="-10.0" startY="0.7071075439453125" stroke="WHITE" />
+      <Line endX="966.7213745117188" endY="2.13568115234375" layoutX="54.0" layoutY="676.0" startY="1.4285888671875" stroke="WHITE" />
+      <Line endX="-6.57147216796875" endY="509.4285888671875" layoutX="1028.0" layoutY="168.0" startX="-6.57147216796875" startY="2.0" stroke="WHITE" />
+   </children>
+</AnchorPane>

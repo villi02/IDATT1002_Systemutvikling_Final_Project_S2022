@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1080.0" styleClass="loginAnchorBackground" stylesheets="@Styles/darkmodeSheet.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.edu.ntnu.idatt1002.techn.App.Controllers.CurrentTournamentController">
+    <children>
+        <ToolBar layoutX="732.0" layoutY="25.0" prefHeight="40.0" prefWidth="333.0" styleClass="menuBar" stylesheets="@Styles/darkmodeSheet.css">
+            <items>
+                <Button mnemonicParsing="false" onAction="#switchToFrontPage" styleClass="menuBarButton" stylesheets="@Styles/darkmodeSheet.css" text="Homepage" />
+                <Button layoutX="10.0" layoutY="13.0" mnemonicParsing="false" onAction="#switchToTeamCreator" styleClass="menuBarButton" stylesheets="@Styles/darkmodeSheet.css" text="Team Registration" />
+                <Button layoutX="102.0" layoutY="13.0" mnemonicParsing="false" onAction="#switchToTournamentGenerator" styleClass="menuBarButton" stylesheets="@Styles/darkmodeSheet.css" text="Tournament Creator" />
+            </items>
+        </ToolBar>
+        <VBox fx:id="roundOf16" alignment="CENTER_LEFT" prefHeight="720.0" prefWidth="101.0" stylesheets="@Styles/darkmodeSheet.css">
+            <children>
+                <VBox focusTraversable="true" prefHeight="46.0" prefWidth="101.0">
+                    <children>
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <Label fx:id="team1" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextOne" stylesheets="@Styles/darkmodeSheet.css" />
+                                <TextField fx:id="score1" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                            </children>
+                        </HBox>
+                        <Line startX="-100.0" />
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <Label fx:id="team2" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextTwo" stylesheets="@Styles/darkmodeSheet.css" />
+                                <TextField fx:id="score2" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <Separator prefHeight="51.0" prefWidth="200.0" visible="false" />
+                <VBox focusTraversable="true" layoutX="10.0" layoutY="10.0" prefHeight="46.0" prefWidth="101.0">
+                    <children>
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <Label fx:id="team3" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextOne" stylesheets="@Styles/darkmodeSheet.css" />
+                                <TextField fx:id="score3" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                            </children>
+                        </HBox>
+                        <Line startX="-100.0" />
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <Label fx:id="team4" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextTwo" stylesheets="@Styles/darkmodeSheet.css" />
+                                <TextField fx:id="score4" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <Separator prefHeight="51.0" prefWidth="200.0" visible="false" />
+                <VBox focusTraversable="true" layoutX="10.0" layoutY="62.0" prefHeight="46.0" prefWidth="101.0">
+                    <children>
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <Label fx:id="team5" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextOne" stylesheets="@Styles/darkmodeSheet.css" />
+                                <TextField fx:id="score5" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                            </children>
+                        </HBox>
+                        <Line startX="-100.0" />
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <Label fx:id="team6" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextTwo" stylesheets="@Styles/darkmodeSheet.css" />
+                                <TextField fx:id="score6" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <Separator prefHeight="51.0" prefWidth="200.0" visible="false" />
+                <VBox focusTraversable="true" layoutX="10.0" layoutY="114.0" prefHeight="46.0" prefWidth="101.0">
+                    <children>
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <Label fx:id="team7" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextOne" stylesheets="@Styles/darkmodeSheet.css" />
+                                <TextField fx:id="score7" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                            </children>
+                        </HBox>
+                        <Line startX="-100.0" />
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <Label fx:id="team8" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextTwo" stylesheets="@Styles/darkmodeSheet.css" />
+                                <TextField fx:id="score8" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <Separator prefHeight="51.0" prefWidth="200.0" visible="false" />
+                <VBox focusTraversable="true" layoutX="10.0" layoutY="166.0" prefHeight="46.0" prefWidth="101.0">
+                    <children>
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <Label fx:id="team9" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextOne" stylesheets="@Styles/darkmodeSheet.css" />
+                                <TextField fx:id="score9" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                            </children>
+                        </HBox>
+                        <Line startX="-100.0" />
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <Label fx:id="team10" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextTwo" stylesheets="@Styles/darkmodeSheet.css" />
+                                <TextField fx:id="score10" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <Separator prefHeight="51.0" prefWidth="200.0" visible="false" />
+                <VBox focusTraversable="true" layoutX="10.0" layoutY="218.0" prefHeight="46.0" prefWidth="101.0">
+                    <children>
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <Label fx:id="team11" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextOne" stylesheets="@Styles/darkmodeSheet.css" />
+                                <TextField fx:id="score11" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                            </children>
+                        </HBox>
+                        <Line startX="-100.0" />
+                        <HBox prefHeight="26.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="team12" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextTwo" stylesheets="@Styles/darkmodeSheet.css" />
+                                <TextField fx:id="score12" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <Separator prefHeight="51.0" prefWidth="200.0" visible="false" />
+                <VBox focusTraversable="true" layoutX="10.0" layoutY="270.0" prefHeight="46.0" prefWidth="101.0">
+                    <children>
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <Label fx:id="team13" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextOne" stylesheets="@Styles/darkmodeSheet.css" />
+                                <TextField fx:id="score13" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                            </children>
+                        </HBox>
+                        <Line startX="-100.0" />
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <Label fx:id="team14" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextTwo" stylesheets="@Styles/darkmodeSheet.css" />
+                                <TextField fx:id="score14" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <Separator prefHeight="51.0" prefWidth="200.0" visible="false" />
+                <VBox focusTraversable="true" layoutX="10.0" layoutY="322.0" prefHeight="46.0" prefWidth="101.0">
+                    <children>
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <Label fx:id="team15" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextOne" stylesheets="@Styles/darkmodeSheet.css" />
+                                <TextField fx:id="score15" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                            </children>
+                        </HBox>
+                        <Line startX="-100.0" />
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <Label fx:id="team16" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextTwo" stylesheets="@Styles/darkmodeSheet.css" />
+                                <TextField fx:id="score16" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children></VBox>
+        <VBox fx:id="roundOf8" layoutX="143.0" layoutY="50.0" prefHeight="638.0" prefWidth="101.0">
+            <children>
+                <VBox prefHeight="51.0" prefWidth="101.0">
+                    <children>
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <Label fx:id="team17" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextOne" stylesheets="@Styles/darkmodeSheet.css" />
+                                <TextField fx:id="score17" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                            </children>
+                        </HBox>
+                        <Line startX="-100.0" />
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <Label fx:id="team18" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextTwo" stylesheets="@Styles/darkmodeSheet.css" />
+                                <TextField fx:id="score18" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <Separator prefHeight="137.0" prefWidth="101.0" visible="false" />
+                <VBox prefHeight="51.0" prefWidth="101.0">
+                    <children>
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <Label fx:id="team19" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextOne" stylesheets="@Styles/darkmodeSheet.css" />
+                                <TextField fx:id="score19" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                            </children>
+                        </HBox>
+                        <Line startX="-100.0" />
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <Label fx:id="team20" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextTwo" stylesheets="@Styles/darkmodeSheet.css" />
+                                <TextField fx:id="score20" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <Separator prefHeight="137.0" prefWidth="101.0" visible="false" />
+                <VBox prefHeight="51.0" prefWidth="101.0">
+                    <children>
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <Label fx:id="team21" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextOne" stylesheets="@Styles/darkmodeSheet.css" />
+                                <TextField fx:id="score21" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                            </children>
+                        </HBox>
+                        <Line startX="-100.0" />
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <Label fx:id="team22" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextTwo" stylesheets="@Styles/darkmodeSheet.css" />
+                                <TextField fx:id="score22" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <Separator prefHeight="137.0" prefWidth="101.0" visible="false" />
+                <VBox prefHeight="51.0" prefWidth="101.0">
+                    <children>
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <Label fx:id="team23" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextOne" stylesheets="@Styles/darkmodeSheet.css" />
+                                <TextField fx:id="score23" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                            </children>
+                        </HBox>
+                        <Line startX="-100.0" />
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <Label fx:id="team24" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextTwo" stylesheets="@Styles/darkmodeSheet.css" />
+                                <TextField fx:id="score24" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+        <VBox fx:id="roundOf4" layoutX="286.0" layoutY="138.0" prefHeight="488.0" prefWidth="101.0">
+            <children>
+                <VBox prefHeight="52.0" prefWidth="101.0">
+                    <children>
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <Label fx:id="team25" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextOne" stylesheets="@Styles/darkmodeSheet.css" />
+                                <TextField fx:id="score25" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                            </children>
+                        </HBox>
+                        <Line startX="-100.0" />
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <Label fx:id="team26" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextTwo" stylesheets="@Styles/darkmodeSheet.css" />
+                                <TextField fx:id="score26" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox prefHeight="52.0" prefWidth="101.0" visible="false">
+                    <children>
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <TextField prefHeight="25.0" prefWidth="151.0" />
+                                <TextField prefHeight="25.0" prefWidth="99.0" />
+                            </children>
+                        </HBox>
+                        <Line startX="-100.0" />
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <TextField prefHeight="25.0" prefWidth="151.0" />
+                                <TextField prefHeight="25.0" prefWidth="99.0" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <Separator prefHeight="177.0" prefWidth="101.0" visible="false" />
+                <VBox prefHeight="52.0" prefWidth="101.0" visible="false">
+                    <children>
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <TextField prefHeight="25.0" prefWidth="151.0" />
+                                <TextField prefHeight="25.0" prefWidth="99.0" />
+                            </children>
+                        </HBox>
+                        <Line startX="-100.0" />
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <TextField prefHeight="25.0" prefWidth="151.0" />
+                                <TextField prefHeight="25.0" prefWidth="99.0" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox prefHeight="52.0" prefWidth="101.0" visible="false">
+                    <children>
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <TextField prefHeight="25.0" prefWidth="151.0" />
+                                <TextField prefHeight="25.0" prefWidth="99.0" />
+                            </children>
+                        </HBox>
+                        <Line startX="-100.0" />
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <TextField prefHeight="25.0" prefWidth="151.0" />
+                                <TextField prefHeight="25.0" prefWidth="99.0" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox prefHeight="52.0" prefWidth="101.0">
+                    <children>
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <Label fx:id="team27" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextOne" stylesheets="@Styles/darkmodeSheet.css" />
+                                <TextField fx:id="score27" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                            </children>
+                        </HBox>
+                        <Line startX="-100.0" />
+                        <HBox prefHeight="26.0" prefWidth="100.0">
+                            <children>
+                                <Label fx:id="team28" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextTwo" stylesheets="@Styles/darkmodeSheet.css" />
+                                <TextField fx:id="score28" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+        <VBox fx:id="roundOf2" layoutX="429.0" layoutY="334.0" prefHeight="52.0" prefWidth="101.0">
+            <children>
+                <HBox prefHeight="26.0" prefWidth="100.0">
+                    <children>
+                        <Label fx:id="team29" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextOne" stylesheets="@Styles/darkmodeSheet.css" />
+                        <TextField fx:id="score29" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                    </children>
+                </HBox>
+                <Line startX="-100.0" />
+                <HBox prefHeight="26.0" prefWidth="100.0">
+                    <children>
+                        <Label fx:id="team30" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" styleClass="displayTeamTextTwo" stylesheets="@Styles/darkmodeSheet.css" />
+                        <TextField fx:id="score30" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" styleClass="displayScore" stylesheets="@Styles/darkmodeSheet.css" />
+                    </children>
+                </HBox>
+            </children></VBox>
+      <Label fx:id="txtTitle" alignment="CENTER" layoutX="430.0" layoutY="25.0" prefHeight="37.0" prefWidth="219.0" styleClass="tournamentInfo" stylesheets="@Styles/darkmodeSheet.css">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAdvanceTournament" layoutX="623.0" layoutY="386.0" mnemonicParsing="false" onAction="#advanceTournament" styleClass="menuBarButton" stylesheets="@Styles/darkmodeSheet.css" text="Advance Tournament" />
+      <Label fx:id="txtDisplayWinner" layoutX="623.0" layoutY="341.0" prefHeight="37.0" prefWidth="243.0" styleClass="tournamentInfo" stylesheets="@Styles/darkmodeSheet.css">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+    </children>
+
+</AnchorPane>

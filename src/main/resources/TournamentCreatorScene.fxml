@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1080.0" styleClass="loginAnchorBackground" stylesheets="@Styles/darkmodeSheet.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.edu.ntnu.idatt1002.techn.App.Controllers.CreateTournamentController">
+    <children>
+
+        <ToolBar layoutX="312.0" layoutY="95.0" prefHeight="40.0" prefWidth="449.0" styleClass="menuBar" stylesheets="@Styles/darkmodeSheet.css">
+            <items>
+                <Button fx:id="homepageButton" mnemonicParsing="false" onAction="#goToHomepage" styleClass="menuBarButton" stylesheets="@Styles/darkmodeSheet.css" text="Homepage" />
+                <Button fx:id="currentTournamentButton" layoutX="10.0" layoutY="13.0" mnemonicParsing="false" onAction="#switchToCurrentTournamentScene" styleClass="menuBarButton" stylesheets="@Styles/darkmodeSheet.css" text="Current Tournament" />
+                <Button fx:id="teamCreateButton" layoutX="102.0" layoutY="13.0" mnemonicParsing="false" onAction="#switchToTeamCreator" styleClass="menuBarButton" text="Team Registration" />
+            <Button mnemonicParsing="false" onAction="#switchToTeamInformationPage" styleClass="menuBarButton" text="Team Information" />
+            </items>
+        </ToolBar>
+      <Label fx:id="labelBracket" layoutX="578.0" layoutY="642.0" text="Preview of the tournament bracket" visible="false" />
+      <Line endX="869.9285278320312" endY="1.5" layoutX="152.0" layoutY="168.0" startX="-100.0" stroke="WHITE" />
+      <Line endX="966.7213745117188" endY="2.13568115234375" layoutX="54.0" layoutY="676.0" startY="1.4285888671875" stroke="WHITE" />
+      <Line endX="-9.0" endY="509.4285888671875" layoutX="63.0" layoutY="168.0" startX="-10.0" startY="0.7071075439453125" stroke="WHITE" />
+      <Line endX="-6.57147216796875" endY="509.4285888671875" layoutX="1028.0" layoutY="168.0" startX="-6.57147216796875" startY="2.0" stroke="WHITE" />
+      <AnchorPane layoutX="54.0" layoutY="170.0" prefHeight="507.0" prefWidth="967.0" styleClass="newAnchorBackground">
+         <children>
+            <TextField fx:id="tournamentNameField" layoutX="34.0" layoutY="145.0" prefHeight="29.0" prefWidth="166.0" promptText="Tournament Name" styleClass="typeAreas" stylesheets="@Styles/darkmodeSheet.css" />
+            <ListView fx:id="listViewTournamentTeams" layoutX="305.0" layoutY="116.0" prefHeight="200.0" prefWidth="196.0" styleClass="typeAreas" />
+            <Label layoutX="305.0" layoutY="94.0" prefHeight="17.0" prefWidth="196.0" text="Click on a team to add to the tournament" textFill="WHITE">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <ListView fx:id="listViewTeamsAddedToTournament" layoutX="534.0" layoutY="116.0" prefHeight="200.0" prefWidth="216.0" styleClass="typeAreas" />
+            <Label layoutX="536.0" layoutY="95.0" text="Click on a team to remove from the tournament" textFill="WHITE">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Button fx:id="createTournament" layoutX="809.0" layoutY="138.0" mnemonicParsing="false" onAction="#createTournament" prefHeight="47.0" prefWidth="117.0" styleClass="menuBarButton" stylesheets="@Styles/darkmodeSheet.css" text="Create tournament" />
+            <Button fx:id="previewBracket" layoutX="809.0" layoutY="203.0" mnemonicParsing="false" onAction="#previewTournamentBracket" prefHeight="47.0" prefWidth="117.0" styleClass="menuBarButton" stylesheets="@Styles/darkmodeSheet.css" text="Preview brackets" />
+            <ImageView fx:id="bracketImage" fitHeight="282.0" fitWidth="263.0" layoutX="33.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ComboBox fx:id="tournamentType" layoutX="34.0" layoutY="191.0" prefHeight="25.0" prefWidth="166.0" promptText="Select tournament type" styleClass="menuBarButton" stylesheets="@Styles/darkmodeSheet.css" />
+         </children>
+      </AnchorPane>
+        <Label layoutX="405.0" layoutY="25.0" prefHeight="47.0" prefWidth="288.0" text="Tournament Creator" textFill="WHITE">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

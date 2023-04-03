@@ -1,0 +1,10 @@
+NTNUI Akademi
+5
+5
+3
+Norwegian
+22,Lotfi,Amin,ViljarSB,Norwegian,Player
+22,Bjørnar,Bjørn,Bjorstar,Norwegian,Captain
+21,Thomas,Thomassen,Februar,Norwegian,Player
+23,Kenneth,Ken,Holo,Norwegian,Player
+22,Johannes,Jon,BregsnMcFreeWin,Norwegian,Player

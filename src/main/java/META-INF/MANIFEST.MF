@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: org.edu.ntnu.idatt1002.techn.App.Main
+

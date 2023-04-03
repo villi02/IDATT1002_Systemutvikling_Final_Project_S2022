@@ -1,0 +1,10 @@
+Sor for Stadt
+5
+1
+2
+Norwegian
+21,Even,Evenson,Twerkmaster24,Norwegian,Captain
+26,Tof,Dyr,Toffeldyr,Norwegian,Player
+23,Bendik,Disken,Bendyboy,Norwegian,Player
+25,Anders,Kulmi,its loose,Norwegian,Player
+23,Ole,Baltz,Olebaltz,Norwegian,Player

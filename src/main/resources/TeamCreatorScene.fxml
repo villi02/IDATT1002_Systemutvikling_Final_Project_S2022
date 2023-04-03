@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1080.0" styleClass="loginAnchorBackground" stylesheets="@Styles/darkmodeSheet.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.edu.ntnu.idatt1002.techn.App.Controllers.TeamCreatorController">
+   <children>
+      <ToolBar layoutX="310.0" layoutY="95.0" prefHeight="40.0" prefWidth="459.0" styleClass="menuBar" stylesheets="@Styles/darkmodeSheet.css">
+        <items>
+          <Button mnemonicParsing="false" onAction="#switchToFrontPage" styleClass="menuBarButton" stylesheets="@Styles/darkmodeSheet.css" text="Homepage" />
+            <Button layoutX="10.0" layoutY="13.0" mnemonicParsing="false" onAction="#switchToCurrentTournament" styleClass="menuBarButton" text="Current Tournament" />
+            <Button layoutX="102.0" layoutY="13.0" mnemonicParsing="false" onAction="#switchToTournamentGenerator" styleClass="menuBarButton" text="Tournament Creator" />
+            <Button layoutX="217.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToTeamInformationPage" styleClass="menuBarButton" text="Team Information" />
+        </items>
+      </ToolBar>
+      <Line endX="-9.0" endY="509.4285888671875" layoutX="63.0" layoutY="168.0" startX="-10.0" startY="0.7071075439453125" stroke="WHITE" />
+      <Line endX="-6.57147216796875" endY="509.4285888671875" layoutX="1028.0" layoutY="168.0" startX="-6.57147216796875" startY="2.0" stroke="WHITE" />
+      <Line endX="966.7213745117188" endY="2.13568115234375" layoutX="54.0" layoutY="676.0" startY="1.4285888671875" stroke="WHITE" />
+      <Line endX="869.7213745117188" endY="2.13568115234375" layoutX="152.0" layoutY="168.0" startX="-98.3" stroke="WHITE" />
+      <AnchorPane layoutX="54.0" layoutY="170.0" prefHeight="507.0" prefWidth="967.0" styleClass="newAnchorBackground" stylesheets="@Styles/darkmodeSheet.css">
+         <children>
+            <Label layoutX="60.0" layoutY="40.0" text="Add Player" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtInpFirstName" layoutX="30.0" layoutY="74.0" promptText="First name" styleClass="typeAreas" stylesheets="@Styles/darkmodeSheet.css" />
+            <TextField fx:id="txtInpLastName" layoutX="30.0" layoutY="122.0" promptText="Last name" styleClass="typeAreas" stylesheets="@Styles/darkmodeSheet.css" />
+            <TextField fx:id="txtInpIGN" layoutX="30.0" layoutY="168.0" promptText="IGN" styleClass="typeAreas" stylesheets="@Styles/darkmodeSheet.css" />
+            <TextField fx:id="txtInpAge" layoutX="30.0" layoutY="210.0" promptText="Age" styleClass="typeAreas" stylesheets="@Styles/darkmodeSheet.css" />
+            <TextField fx:id="txtInpNationality" layoutX="30.0" layoutY="254.0" promptText="Nationality" styleClass="typeAreas" stylesheets="@Styles/darkmodeSheet.css" />
+            <CheckBox fx:id="checkboxPlayer" layoutX="39.0" layoutY="346.0" mnemonicParsing="false" stylesheets="@Styles/darkmodeSheet.css" text="Player" textFill="WHITE" />
+            <CheckBox fx:id="checkboxCoach" layoutX="39.0" layoutY="322.0" mnemonicParsing="false" text="Coach" textFill="WHITE" />
+            <CheckBox fx:id="checkboxCaptain" layoutX="39.0" layoutY="297.0" mnemonicParsing="false" text="Captain" textFill="WHITE" />
+            <Button layoutX="33.0" layoutY="379.0" mnemonicParsing="false" onAction="#btnClickAddPlayer" styleClass="menuBarButton" stylesheets="@Styles/darkmodeSheet.css" text="Add Player" />
+            <Label layoutX="249.0" layoutY="40.0" text="Add Team" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtInpTeamName" layoutX="227.0" layoutY="74.0" prefHeight="31.0" prefWidth="155.0" promptText="Team Name" styleClass="typeAreas" stylesheets="@Styles/darkmodeSheet.css" />
+            <TextField fx:id="txtInpTeamNationality" layoutX="227.0" layoutY="137.0" promptText="Nationality" styleClass="typeAreas" stylesheets="@Styles/darkmodeSheet.css" />
+            <Button layoutX="269.0" layoutY="197.0" mnemonicParsing="false" onAction="#btnClickAddTeam" styleClass="menuBarButton" stylesheets="@Styles/darkmodeSheet.css" text="Add Team" />
+            <ListView fx:id="teamList" layoutX="475.0" layoutY="74.0" prefHeight="383.0" prefWidth="200.0" styleClass="typeAreas" />
+            <Label fx:id="txtCurrentTeamName" layoutX="774.0" layoutY="40.0" text="Current Team" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="547.0" layoutY="40.0" text="Teams" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ListView fx:id="currentTeamList" layoutX="734.0" layoutY="74.0" prefHeight="383.0" prefWidth="200.0" styleClass="typeAreas" />
+            <Button layoutX="120.0" layoutY="379.0" mnemonicParsing="false" onAction="#btnClickClearPlayerField" prefHeight="25.0" prefWidth="53.0" styleClass="menuBarButton" stylesheets="@Styles/darkmodeSheet.css" text="Clear" />
+            <Button layoutX="583.0" layoutY="467.0" mnemonicParsing="false" onAction="#btnRemoveTeam" styleClass="menuBarButton" stylesheets="@Styles/darkmodeSheet.css" text="Remove Team" />
+            <Button layoutX="839.0" layoutY="467.0" mnemonicParsing="false" onAction="#btnRemovePlayer" text="Remove player" />
+            <Label fx:id="txtCurrentPlayer" layoutX="734.0" layoutY="467.0" prefHeight="25.0" prefWidth="103.0" styleClass="tournamentInfo" stylesheets="@Styles/darkmodeSheet.css" />
+         </children></AnchorPane>
+      <Label layoutX="412.0" layoutY="25.0" text="Team Registration" textFill="WHITE">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

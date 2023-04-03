@@ -1,0 +1,10 @@
+Hyrdestund
+2
+6
+0
+Norwegian
+23,Fredrik,Fred,Tellegutt,Norwegian,Player
+27,Henry,En,henryen,Norwegian,Player
+24,Bekk,Mo,Bekkmoen,Norwegian,Captain
+24,Kefir,Broder,Kefir,Norwegian,Player
+23,Andreas,Bus,JustANormalNoob,Norwegian,Player

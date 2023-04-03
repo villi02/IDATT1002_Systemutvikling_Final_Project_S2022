@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" styleClass="loginAnchorBackground" stylesheets="@Styles/darkmodeSheet.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.edu.ntnu.idatt1002.techn.App.Controllers.LogInPageController">
+   <children>
+      <Label layoutX="245.0" layoutY="26.0" prefHeight="85.0" prefWidth="604.0" style="-fx-font-family: 'Copperplate Gothic Light';" text="Kombos E-Sport Tournament">
+         <font>
+            <Font size="38.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.03752436488866806" green="0.422149121761322" blue="0.7368420958518982" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7546296119689941" green="0.8895833492279053" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill></Label>
+      <TextField fx:id="txtInpUser" layoutX="424.0" layoutY="267.0" prefHeight="44.0" prefWidth="247.0" promptText="Username" />
+      <PasswordField fx:id="tetInpPSW" layoutX="425.0" layoutY="323.0" prefHeight="44.0" prefWidth="247.0" promptText="Password" />
+      <Button id="loginButton" fx:id="loginBtn" layoutX="494.0" layoutY="399.0" mnemonicParsing="false" onAction="#btnClickLogin" prefHeight="37.0" prefWidth="108.0" styleClass="loginButton" stylesheets="@Styles/darkmodeSheet.css" text="Login" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Label layoutX="478.0" layoutY="213.0" prefHeight="35.0" prefWidth="142.0" text="Admin Login" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Button id="homePageButton" fx:id="loginBtn1" layoutX="494.0" layoutY="454.0" mnemonicParsing="false" onAction="#switchToStartUpPage" prefHeight="37.0" prefWidth="108.0" styleClass="loginButton" text="Homepage" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

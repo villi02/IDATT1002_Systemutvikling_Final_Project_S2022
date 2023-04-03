@@ -1,0 +1,10 @@
+NTNUI Hovedlag
+3
+2
+0
+Norwegian
+22,Ivan,JK,IvanJk,Norwegian,Player
+23,Ådne,Ådnissen,Olunn,Norwegian,Player
+23,Vetle,Wendor,Waffle Vendor,Norwegian,Player
+21,Simen,Money,Cashh,Norwegian,Player
+21,Cem,Sayer,Misty Thoughts,Norwegian,Captain
